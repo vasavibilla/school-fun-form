@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Fun Fair Registration</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>School Fun Fair Registration</h1>
+        <form action="#" method="post">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <!-- Age Field -->
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="5" max="100" placeholder="Enter your age" required>
+            </div>
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <!-- Contact Number -->
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+            </div>
+            <!-- Event Selection -->
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">--Choose an Event--</option>
+                    <option value="art_competition">Art Competition</option>
+                    <option value="science_exhibition">Science Exhibition</option>
+                    <option value="sports_day">Sports Day</option>
+                    <option value="cultural_program">Cultural Program</option>
+                </select>
+            </div>
+            <!-- Checkbox for Terms -->
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions.</label>
+            </div>
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
